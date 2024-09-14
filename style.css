@@ -1,0 +1,150 @@
+body {
+  background-color: #000000;
+  color: #00FF00;
+  font-family: 'Source Code Pro', monospace;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+  padding: 10px 20px;
+  border-bottom: 1px solid #00FF00;
+}
+
+.navbar-brand {
+  color: #00FF00;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+.navbar-links a {
+  color: #00FF00;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+.navbar-links a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.welcome-section {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.welcome-section h1 {
+  font-size: 2em;
+}
+/* Blinking cursor effect */
+.cursor {
+  display: inline-block;
+  animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+h1, h2, h3 {
+  color: #00FF00;
+}
+
+h2::before {
+  content: "> ";
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li::before {
+  content: "- ";
+  color: #00FF00;
+}
+
+a {
+  color: #00FF00;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+form label {
+  display: block;
+  margin-top: 15px;
+}
+
+form input, form textarea {
+  width: 100%;
+  background-color: #000000;
+  border: 1px solid #00FF00;
+  color: #00FF00;
+  padding: 10px;
+  margin-top: 5px;
+  font-family: 'Source Code Pro', monospace;
+}
+
+form button {
+  margin-top: 20px;
+  background-color: #000000;
+  border: 1px solid #00FF00;
+  color: #00FF00;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-family: 'Source Code Pro', monospace;
+}
+
+form button:hover {
+  background-color: #00FF00;
+  color: #000000;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #00FF00;
+  margin-top: 50px;
+}
+
+/* #visitor-info {
+   display: flex;
+  align-items: right; 
+   flex-wrap: wrap; 
+ }
+
+#visitor-info p {
+  margin: 1;
+} */
+
+#ip-address {
+  margin-right: 10px;
+}
+
+.flag-image {
+  width: 2vw;   /* 2% of the viewport width */
+  height: auto;
+} 
+
+
+#visitor-info p {
+  line-height: 0.25;
+}
